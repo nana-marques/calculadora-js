@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
 </head>
 <body>
     <div class="calculator">
         <div class="container">
-            <div class="display">0</div>
+            
+            <div class="display">
+                <input type="text" id="display" class="screen">
+            </div>
             <div class="buttons">
                 <div class="row">
                     <button class="clean">C</button>
@@ -19,7 +23,7 @@
                     <button class="clean">%</button>
                 </div>
                 <div class="row">
-                    <button class="num">7</button>
+                    <button class="num" value="7" onclick="display.value += '7' ">7</button>
                     <button class="num">8</button>
                     <button class="num">9</button>
                     <button class="op">+</button>
@@ -44,6 +48,7 @@
                 </div>
                 
             </div>
+            
         </div>
     </div>
 </body>
